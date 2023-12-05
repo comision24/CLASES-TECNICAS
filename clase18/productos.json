@@ -1,0 +1,74 @@
+[
+   {
+      "id": 1,
+      "titulo": "Microondas",
+      "marca": "Peabody",
+      "modelo": "mk-233",
+      "precio": 50000,
+      "descuento": null,
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, totam alias aliquid aut eum sequi tempore. Rerum a, obcaecati veritatis harum nobis adipisci reiciendis quibusdam modi, doloribus culpa expedita voluptatibus!",
+      "categoria": "electrodomésticos",
+      "stock": 15,
+      "vendido": false
+   },
+   {
+      "id": 2,
+      "titulo": "Smartphone Samsung S22",
+      "marca": "Samsung",
+      "modelo": "S22",
+      "precio": 300000,
+      "descuento": 20,
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, totam alias aliquid aut eum sequi tempore. Rerum a, obcaecati veritatis harum nobis adipisci reiciendis quibusdam modi, doloribus culpa expedita voluptatibus!",
+      "categoria": "celulares",
+      "stock": 26,
+      "vendido": true
+   },
+   {
+      "id": 3,
+      "titulo": "Portátil HP Pavilion",
+      "marca": "HP",
+      "modelo": "nose",
+      "precio": 800000,
+      "descuento": 5,
+      "descripcion": "Portátil HP Pavilion con procesador Intel Core i5, 8 GB de RAM y disco duro de 256 GB SSD. Pantalla de 14 pulgadas.",
+      "categoria": "portatiles",
+      "stock": 15,
+      "vendido": false
+   },
+   {
+      "id": 4,
+      "titulo": "Auriculares Sony WH-1000XM4",
+      "marca": "Sony",
+      "modelo": "WH-1000XM4",
+      "precio": 350000,
+      "descuento": 10,
+      "descripcion": "Auriculares inalámbricos con cancelación de ruido. Autonomía de hasta 30 horas con una sola carga.",
+      "categoria": "audio",
+      "stock": 10,
+      "vendido": true
+   },
+   {
+      "id": 5,
+      "titulo": "Smart TV Samsung QLED 55",
+      "marca": "Samsung",
+      "modelo": "QLED Q60T",
+      "precio": 1500000,
+      "descuento": null,
+      "descripcion": "Televisor Samsung QLED de 55 pulgadas con resolución 4K. Tecnología Quantum Dot para colores más vibrantes.",
+      "categoria": "televisiones",
+      "stock": 20,
+      "vendido": true
+   },
+   {
+      "id": 6,
+      "titulo": "Smart TV Samsung QLED 80",
+      "marca": "Samsung",
+      "modelo": "QLED Q80G",
+      "precio": 3000000,
+      "descuento": 10,
+      "descripcion": "Televisor Samsung QLED de 80 pulgadas con resolución 4K. Tecnología Quantum Dot para colores más vibrantes.",
+      "categoria": "televisiones",
+      "stock": 10,
+      "vendido": false
+   }
+]

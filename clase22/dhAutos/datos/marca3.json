@@ -1,0 +1,32 @@
+[
+  {
+    "marca": "Chevrolet",
+    "modelo": "Cruze",
+    "precio": 27000,
+    "stock": 10
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Malibu",
+    "precio": 33000,
+    "stock": 8
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Equinox",
+    "precio": 35000,
+    "stock": 12
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Silverado",
+    "precio": 45000,
+    "stock": 6
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Camaro",
+    "precio": 50000,
+    "stock": 7
+  }
+]

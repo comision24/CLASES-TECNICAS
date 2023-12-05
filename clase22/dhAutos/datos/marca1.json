@@ -1,0 +1,32 @@
+[
+  {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "precio": 25000,
+    "stock": 10
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Camry",
+    "precio": 28000,
+    "stock": 8
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "RAV4",
+    "precio": 30000,
+    "stock": 12
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Prius",
+    "precio": 27000,
+    "stock": 7
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Supra",
+    "precio": 45000,
+    "stock": 5
+  }
+]

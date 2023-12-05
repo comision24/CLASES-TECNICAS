@@ -1,0 +1,35 @@
+[
+    {
+      "nombre": "Superman",
+      "alias": "Clark Kent",
+      "edad": 35,
+      "ciudadDeOrigen": "Metropolis",
+      "equipo": "Liga de la Justicia",
+      "poderes": ["Super fuerza", "Volar", "Visión de rayos X"]
+    },
+    {
+      "nombre": "Spider-Man",
+      "alias": "Peter Parker",
+      "edad": 27,
+      "ciudadDeOrigen": "Nueva York",
+      "equipo": "Vengadores",
+      "poderes": ["Telarañas", "Sentido arácnido"]
+    },
+    {
+      "nombre": "Wonder Woman",
+      "alias": "Diana Prince",
+      "edad": 30,
+      "ciudadDeOrigen": "Themyscira",
+      "equipo": "Liga de la Justicia",
+      "poderes": ["Fuerza divina", "Lazo de la verdad"]
+    },
+    {
+      "nombre": "Iron Man",
+      "alias": "Tony Stark",
+      "edad": 40,
+      "ciudadDeOrigen": "Nueva York",
+      "equipo": "Vengadores",
+      "poderes": ["Armadura avanzada", "Inteligencia"]
+    }
+  ]
+  

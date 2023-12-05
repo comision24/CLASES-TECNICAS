@@ -1,0 +1,32 @@
+[
+  {
+    "marca": "Ford",
+    "modelo": "Mustang",
+    "precio": 35000,
+    "stock": 15
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Focus",
+    "precio": 25000,
+    "stock": 10
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Escape",
+    "precio": 30000,
+    "stock": 12
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Explorer",
+    "precio": 40000,
+    "stock": 8
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Fusion",
+    "precio": 28000,
+    "stock": 11
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id":1,
+    "titulo":"Pulp Fiction",
+    "genero":"Crimen",
+    "anioLanzamiento":1994,
+    "precio":9.99,
+    "vendida":false,
+    "rating":8.9
+  },
+  {
+    "id":2,
+    "titulo":"Matrix",
+    "genero":"Ciencia Ficción",
+    "anioLanzamiento":1999,
+    "precio":12.99,
+    "vendida":false,
+    "rating":8.7
+  },
+  {
+    "id":3,
+    "titulo": "El Resplandor",
+    "genero": "Terror",
+    "añoLanzamiento": 1980,
+    "precio": 10.99,
+    "vendida": true,
+    "rating": 8.4
+  },
+  {
+    "id":4,
+    "titulo": "Forrest Gump",
+    "genero": "Drama",
+    "añoLanzamiento": 1994,
+    "precio": 11.99,
+    "vendida": false,
+    "rating": 8.8
+  },
+  {
+    "id":5,
+    "titulo": "Jurassic Park",
+    "genero": "Aventura",
+    "añoLanzamiento": 1993,
+    "precio": 13.99,
+    "vendida": false,
+    "rating": 8.1
+  },
+  {
+    "id":6,
+    "titulo": "Star Wars: Episodio IV - Una Nueva Esperanza",
+    "genero": "Ciencia Ficción",
+    "añoLanzamiento": 1977,
+    "precio": 14.99,
+    "vendida": false,
+    "rating": 8.6
+  },
+  {
+    "id":7,
+    "titulo": "El Pianista",
+    "genero": "Biografía",
+    "añoLanzamiento": 2002,
+    "precio": 9.99,
+    "vendida": true,
+    "rating": 8.5
+  },
+  {
+    "id":8,
+    "titulo": "El Rey León",
+    "genero": "Animación",
+    "añoLanzamiento": 1994,
+    "precio": 10.99,
+    "vendida": false,
+    "rating": 8.5
+  },
+  {
+    "id":9,
+    "titulo": "Los Vengadores",
+    "genero": "Acción",
+    "añoLanzamiento": 2012,
+    "precio": 14.99,
+    "vendida": true,
+    "rating": 8.0
+  },
+  {
+    "id":10,
+    "titulo": "La Lista de Schindler",
+    "genero": "Biografía",
+    "añoLanzamiento": 1993,
+    "precio": 11.99,
+    "vendida": true,
+    "rating": 8.9
+  }
+]

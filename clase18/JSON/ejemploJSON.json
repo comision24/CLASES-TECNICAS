@@ -1,0 +1,11 @@
+{
+  "nombre": "Emanuel",
+  "edad": 31,
+  "estudio": true,
+  "dinero": null,
+  "hobbie": ["tocar guitarra"],
+  "direccion": {
+    "calle":"calle falsa",
+    "numero":123
+  }
+}

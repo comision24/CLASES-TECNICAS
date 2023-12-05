@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pulp Fiction",
+    "genero": "Crimen",
+    "anioLanzamiento": 1994,
+    "precio": 9.99,
+    "vendida": false,
+    "rating": 8.9,
+    "actores": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson",
+      "Bruce Willis"
+    ],
+    "detallesExtra": {
+      "director": "Quentin Tarantino",
+      "sinopsis": "Pulp Fiction es una película de crimen y comedia negra que entrelaza varias historias de personajes en el mundo del crimen en Los Ángeles."
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Matrix",
+    "genero": "Ciencia Ficción",
+    "anioLanzamiento": 1999,
+    "precio": 12.99,
+    "vendida": false,
+    "rating": 8.7,
+    "actores": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss",
+      "Hugo Weaving"
+    ],
+    "detallesExtra": {
+      "directores": ["Lana Wachowski", "Lilly Wachowski"],
+      "sinopsis": "Matrix es una película de ciencia ficción que presenta un mundo en el que los humanos están atrapados en una simulación de realidad creada por máquinas."
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "El Resplandor",
+    "genero": "Terror",
+    "añoLanzamiento": 1980,
+    "precio": 10.99,
+    "vendida": true,
+    "rating": 8.4,
+    "actores": [
+      "Jack Nicholson",
+      "Shelley Duvall",
+      "Danny Lloyd",
+      "Scatman Crothers"
+    ],
+    "detallesExtra": {
+      "director": "Stanley Kubrick",
+      "sinopsis": "El Resplandor es una película de terror psicológico basada en la novela de Stephen King, que sigue a un escritor y su familia en un aislado hotel embrujado."
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "Forrest Gump",
+    "genero": "Drama",
+    "añoLanzamiento": 1994,
+    "precio": 11.99,
+    "vendida": false,
+    "rating": 8.8,
+    "actores": ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field"],
+    "detallesExtra": {
+      "director": "Robert Zemeckis",
+      "sinopsis": "Forrest Gump es una película de drama que sigue la vida de un hombre con discapacidades intelectuales que se convierte en testigo de eventos históricos clave en Estados Unidos."
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "Jurassic Park",
+    "genero": "Aventura",
+    "añoLanzamiento": 1993,
+    "precio": 13.99,
+    "vendida": false,
+    "rating": 8.1,
+    "actores": [
+      "Sam Neill",
+      "Laura Dern",
+      "Jeff Goldblum",
+      "Richard Attenborough"
+    ],
+    "detallesExtra": {
+      "director": "Steven Spielberg",
+      "sinopsis": "Jurassic Park es una película de aventuras en la que un parque temático de dinosaurios clonados escapa de control y pone en peligro a los visitantes."
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Star Wars: Episodio IV - Una Nueva Esperanza",
+    "genero": "Ciencia Ficción",
+    "añoLanzamiento": 1977,
+    "precio": 14.99,
+    "vendida": false,
+    "rating": 8.6,
+    "actores": [
+      "Mark Hamill",
+      "Harrison Ford",
+      "Carrie Fisher",
+      "Alec Guinness"
+    ],
+    "detallesExtra": {
+      "director": "George Lucas",
+      "sinopsis": "Star Wars es una epopeya de ciencia ficción que sigue a un joven granjero, una princesa y un contrabandista en su lucha contra un imperio opresivo."
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "El Pianista",
+    "genero": "Biografía",
+    "añoLanzamiento": 2002,
+    "precio": 9.99,
+    "vendida": true,
+    "rating": 8.5,
+    "actores": [
+      "Adrien Brody",
+      "Thomas Kretschmann",
+      "Frank Finlay",
+      "Maureen Lipman"
+    ],
+    "detallesExtra": {
+      "director": "Roman Polanski",
+      "sinopsis": "El Pianista es una película basada en la verdadera historia de un pianista judío polaco que sobrevive en el gueto de Varsovia durante la Segunda Guerra Mundial."
+    }
+  },
+  {
+    "id": 8,
+    "titulo": "El Rey León",
+    "genero": "Animación",
+    "añoLanzamiento": 1994,
+    "precio": 10.99,
+    "vendida": false,
+    "rating": 8.5,
+    "actores": [
+      "Matthew Broderick",
+      "Jeremy Irons",
+      "James Earl Jones",
+      "Moira Kelly"
+    ],
+    "detallesExtra": {
+      "directores": ["Roger Allers", "Rob Minkoff"],
+      "sinopsis": "El Rey León es una película animada de Disney que sigue la vida de Simba, un joven león que debe enfrentar su destino como rey de la sabana africana."
+    }
+  },
+  {
+    "id": 9,
+    "titulo": "Los Vengadores",
+    "genero": "Acción",
+    "añoLanzamiento": 2012,
+    "precio": 14.99,
+    "vendida": true,
+    "rating": 8.0,
+    "actores": [
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Scarlett Johansson",
+      "Mark Ruffalo"
+    ],
+    "detallesExtra": {
+      "directores": ["Joss Whedon"],
+      "sinopsis": "Los Vengadores es una película de superhéroes de Marvel en la que un grupo de héroes se une para enfrentar una amenaza intergaláctica."
+    }
+  },
+  {
+    "id": 10,
+    "titulo": "La Lista de Schindler",
+    "genero": "Biografía",
+    "añoLanzamiento": 1993,
+    "precio": 11.99,
+    "vendida": true,
+    "rating": 8.9,
+    "actores": [
+      "Liam Neeson",
+      "Ben Kingsley",
+      "Ralph Fiennes",
+      "Caroline Goodall"
+    ],
+    "detallesExtra": {
+      "director": "Steven Spielberg",
+      "sinopsis": "La Lista de Schindler está basada en la verdadera historia de Oskar Schindler, un empresario alemán que salva a más de mil judíos durante el Holocausto."
+    }
+  }
+]

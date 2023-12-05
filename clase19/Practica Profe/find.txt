@@ -1,0 +1,1 @@
+find  --> busca un elemento que cumpla con una condición, devuelve el primer elemento que coincida con la condición y si no lo encuentra devuelve undefined

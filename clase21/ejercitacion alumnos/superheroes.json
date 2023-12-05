@@ -1,0 +1,66 @@
+[
+  {
+    "nombre": "Superman",
+    "alias": "Clark Kent",
+    "edad": 35,
+    "ciudadDeOrigen": "Metropolis",
+    "equipo": "Liga de la Justicia",
+    "poderes": ["Super fuerza", "Volar", "Visión de rayos X"],
+    "villano": {
+      "nombre": "Lex Luthor",
+      "alias": "Ninguno",
+      "edad": 45,
+      "ciudadDeOrigen": "Metropolis",
+      "equipo": "Injustice League",
+      "poderes": ["Inteligencia sobresaliente"]
+    }
+  },
+  {
+    "nombre": "Spider-Man",
+    "alias": "Peter Parker",
+    "edad": 27,
+    "ciudadDeOrigen": "Nueva York",
+    "equipo": "Vengadores",
+    "poderes": ["Telarañas", "Sentido arácnido"],
+    "villano": {
+      "nombre": "Green Goblin",
+      "alias": "Norman Osborn",
+      "edad": 50,
+      "ciudadDeOrigen": "Nueva York",
+      "equipo": "Sin equipo conocido",
+      "poderes": ["Fuerza sobrehumana", "Goblins tecnológicos"]
+    }
+  },
+  {
+    "nombre": "Wonder Woman",
+    "alias": "Diana Prince",
+    "edad": 30,
+    "ciudadDeOrigen": "Themyscira",
+    "equipo": "Liga de la Justicia",
+    "poderes": ["Fuerza divina", "Lazo de la verdad"],
+    "villano": {
+      "nombre": "Cheetah",
+      "alias": "Barbara Ann Minerva",
+      "edad": 35,
+      "ciudadDeOrigen": "Ciudad Gótica",
+      "equipo": "Sin equipo conocido",
+      "poderes": ["Fuerza sobrehumana", "Agilidad felina"]
+    }
+  },
+  {
+    "nombre": "Iron Man",
+    "alias": "Tony Stark",
+    "edad": 40,
+    "ciudadDeOrigen": "Nueva York",
+    "equipo": "Vengadores",
+    "poderes": ["Armadura avanzada", "Inteligencia"],
+    "villano": {
+      "nombre": "Mandarín",
+      "alias": "Desconocido",
+      "edad": 55,
+      "ciudadDeOrigen": "Desconocida",
+      "equipo": "Sin equipo conocido",
+      "poderes": ["Anillos de poder"]
+    }
+  }
+]
