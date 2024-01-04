@@ -1,0 +1,5 @@
+https://github.com/comision24/KITCHENING/tree/STYLE-TABLET-AND-DESKTOP
+
+Se realizo los estilos de tablet y desktop, tambien se realizo el deploy en Render.
+
+link deploy: https://kitchening-3pe4.onrender.com
