@@ -1,0 +1,3 @@
+https://github.com/comision24/KITCHENING/tree/VIEW-REGISTER-AND-BOOTSTRAP
+
+Se terminaron las media querys con bootstrap y algunos ejemplos de pseudoelementos
