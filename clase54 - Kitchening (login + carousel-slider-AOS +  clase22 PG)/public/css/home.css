@@ -1,0 +1,130 @@
+/* Mobile */
+
+body.home-body {
+    background-image: url('../images/bg-body.png');
+}
+
+main.home {}
+
+main.home section.banner {
+    display: none;
+}
+
+main.home section.banner img {}
+
+main.home section.vip-products {}
+
+main.home section.vip-products article.product {
+    margin: 15px 0;
+}
+
+main.home .vip-products .product .photo-container {
+    position: relative;
+}
+
+main.home .vip-products .product .photo-container img.photo {
+    width: 100%;
+}
+
+main.home .vip-products .product .photo-container img.sticker {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+main.home .vip-products .product .photo-container a.zoom {
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+
+main.home .vip-products .product h2 {}
+
+main.home .vip-products .product p {}
+
+main.home .vip-products .product a.more {
+    display: inline-block;
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 5px 7px;
+}
+
+/* BANNER */
+main.home .carousel-inner {
+    height: 300px;
+}
+
+
+/* Tablet */
+@media (min-width: 426px) {  
+
+    body.home-body {}
+    
+    main.home {}
+    
+    main.home section.banner {
+    display: block;
+}
+    
+    main.home section.banner img {
+    width: 100%;
+}
+    
+    main.home section.vip-products {}
+    
+    main.home section.vip-products article.product {display: inline-block;width: calc(50% - 2px);}
+    
+    main.home .vip-products .product .photo-container {}
+    
+    main.home .vip-products .product .photo-container img.photo {}
+    
+    main.home .vip-products .product .photo-container img.sticker {}
+    
+    main.home .vip-products .product .photo-container a.zoom {}
+    
+    main.home .vip-products .product h2 {}
+    
+    main.home .vip-products .product p {}
+    
+    main.home .vip-products .product a.more {}
+    
+}
+
+/* Desktop */
+@media (min-width:769px) {
+    body.home-body {
+    margin: 5px 70px;
+}
+    
+    main.home {}
+    
+    main.home section.banner {}
+    
+    main.home section.banner img {}
+    
+    main.home section.vip-products {}
+    
+    main.home section.vip-products article.product {
+    width: calc(33.3% - 2.3px);
+}
+    
+    main.home .vip-products .product .photo-container {}
+    
+    main.home .vip-products .product .photo-container img.photo {}
+    
+    main.home .vip-products .product .photo-container img.sticker {}
+    
+    main.home .vip-products .product .photo-container a.zoom {}
+    
+    main.home .vip-products .product h2 {}
+    
+    main.home .vip-products .product p {}
+    
+    main.home .vip-products .product a.more {}
+}

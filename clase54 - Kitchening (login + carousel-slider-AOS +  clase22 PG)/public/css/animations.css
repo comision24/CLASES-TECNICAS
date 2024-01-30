@@ -1,0 +1,37 @@
+@keyframes blink1 {
+  from {
+    /* opacity: 1; */
+    transform: rotate(0deg)
+  }
+
+  to {
+    /* opacity: 0; */
+    transform: rotate(360deg)
+  }
+}
+
+
+@keyframes blink2 {
+  0% {
+    background-color: red;
+    color: white;
+  }
+
+  25% {
+    background-color: greenyellow;
+    color: black;
+  }
+
+  40% {
+    background-color: lightblue;
+  }
+
+  90% {
+    background-color: blueviolet;
+    color: white;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
