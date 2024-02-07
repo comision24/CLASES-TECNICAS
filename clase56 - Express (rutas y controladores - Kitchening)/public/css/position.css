@@ -1,0 +1,97 @@
+.div-container {
+  position: relative;
+}
+
+.position .div-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  /* ----------*/
+  /* POSITIONS */
+
+
+}
+
+.position .div-item:last-child {
+  color: white;
+}
+
+
+
+
+
+.position .div-3 {
+  position: absolute;
+  bottom: 0;
+  right:0;
+
+  /* ANIMATION */
+  animation: blink2 .5s infinite alternate;
+}
+
+
+.position .div-2 {
+  position: fixed;
+  bottom: 47px;
+  right: 39px;
+
+  /* ZINDEX */
+  z-index: 10;
+
+  /* ANIMATION */
+  animation-name: blink1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+ /*  animation-direction: alternate; */
+}
+
+.position .div-4 {
+ position: relative;
+ left: 50%;
+ transform: translateX(-50%);
+
+ /* ZINDEX */
+ z-index: 9;
+}
+
+.position .div-5 {
+  position: relative;
+  left: 50%;
+  bottom: 30px;
+
+   /* ZINDEX */
+    z-index: 8;
+}
+
+.position .div-1 {
+  position: absolute;
+  right: 50%;
+
+  /* ZINDEX */
+  z-index: 10;
+
+  transition-property: transform,color,border-radius;
+  transition-duration: 1s,5s,2s;
+
+  overflow: hidden;
+}
+
+.position .div-1:hover {
+  transform: rotate(360deg);
+  color: white;
+  border-radius: 50%;
+}
+
+.position .text-div-1 {
+  position: relative;
+  transition: all 3s;
+  right: 0;
+}
+
+.position .div-1:hover .text-div-1 {
+  right: -100%;
+}

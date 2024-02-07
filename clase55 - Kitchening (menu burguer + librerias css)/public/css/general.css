@@ -1,0 +1,45 @@
+:root {
+  --gray:#3a3a3c;
+  --white: white;
+  --red:#c80000;
+  --light_gray:#cacaca;
+
+  /* FONTS */
+  --FamilyRoboto:'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--FamilyRoboto);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  margin: 5px 5px 0 5px;
+}
+
+
+.contain-dots {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(255,255,255,.7);
+}

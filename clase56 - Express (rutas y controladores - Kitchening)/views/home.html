@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KITCHENING</title>
+
+  <!-- GLIDER CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/library/glider.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Hamburgers CSS -->
+  <link rel="stylesheet" href="/css/library/hamburgers.min.css">
+
+  <!-- Three Dots CSS -->
+  <link rel="stylesheet" href="/css/library/three-dots.min.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="home-body">
+  <div class="contain-dots" id="contain-dots">
+    <div class="dot-spin"></div>
+  </div>
+
+  <!-- CABECERA -->
+  <header class="main-header">
+    <img class="logo" src="/images/logo.jpg" alt="logo">
+
+   <!--  <a href="#" class="burger-menu">
+      <i class="fa-solid fa-bars"></i>
+    </a> -->
+
+    <button class="burger-menu hamburger hamburger--collapse" type="button"
+    aria-label="Menu" aria-controls="#navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <nav class="main-nav" id="navigation">
+      <ul>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="">QUIENES</a></li>
+        <li><a href="/carrito">CARRITO</a></li>
+        <li><a href="/position">POSITION</a></li>
+        <li><a href="/pseudoclases">PSEUDOCLASES</a></li>
+        <li><a href="/registro">REGISTRO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home">
+    <!-- BANNER -->
+    <!--  <section class="banner">
+      <img src="/images/img-banner.jpg" alt="">
+    </section> -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item h-100 active">
+          <img src="/images/banner/img-banner.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="...">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="/images/banner/img-banner-2.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="mt-4">
+
+      <div class="glider-contain">
+        <div class="glider">
+          <div>
+            <!-- PRODUCTO 1 -->
+            <div class="card mx-2">
+              <img src="/images/img-pdto-1.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- PRODUCTO 2 -->
+            <div class="card mx-2">
+              <img src="/images/img-pdto-2.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- PRODUCTO 3 -->
+            <div class="card mx-2">
+              <img src="/images/img-pdto-3.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- PRODUCTO 4 -->
+            <div class="card mx-2">
+              <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/597787.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- PRODUCTO 5 -->
+            <div class="card mx-2">
+              <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/9333506.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 5</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- PRODUCTO 6 -->
+            <div class="card mx-2">
+              <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/8102850.jpg" class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Card 6</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Ver más</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button aria-label="Next" class="glider-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="dots"></div>
+      </div>
+
+
+
+      
+
+    </div>
+
+
+
+    <!-- PRODUCTOS -->
+    <section class="vip-products">
+      <!-- <h2>Productos Vip</h2> -->
+      <!-- PRODUCTO 1 -->
+      <article class="product" data-aos="fade-right" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-1.jpg" alt="foto">
+          <img class="sticker" src="/images/img-nuevo.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article class="product" data-aos="fade-up" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-2.jpg" alt="foto">
+          <img class="sticker" src="/images/img-gratis.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="product" data-aos="fade-left" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-3.jpg" alt="foto">
+          <img class="sticker" src="/images/img-descuento.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+      <!-- PRODUCTO 4 -->
+      <article class="product" data-aos="fade-right" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-1.jpg" alt="foto">
+          <img class="sticker" src="/images/img-gratis.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+      <!-- PRODUCTO 5 -->
+      <article class="product" data-aos="fade-up" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-2.jpg" alt="foto">
+          <img class="sticker" src="/images/img-nuevo.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+      <!-- PRODUCTO 6 -->
+      <article class="product" data-aos="fade-right" data-aos-duration="1500">
+        <div class="photo-container">
+          <img class="photo" src="/images/img-pdto-3.jpg" alt="foto">
+          <img class="sticker" src="/images/img-descuento.png" alt="sticker">
+          <a class="zoom" href="#">AMPLIAR FOTO</a>
+        </div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+          distinctio libero.</p>
+        <a class="more" href="">ver más</a>
+      </article>
+
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Quienes</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Sucursales</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- GLIDER SCRIPT -->
+  <script src="/js/library/glider.min.js"></script>
+
+  <!-- GLIDER CONFIG SCRIPT -->
+  <script src="/js/configs/glider.js"></script>
+
+  <!-- Hamburger SCRIPT -->
+  <script src="/js/library/hamburguer.js"></script>
+
+  <!-- loadDots -->
+  <script src="/js/loadDots.js"></script>
+</body>
+
+</html>
