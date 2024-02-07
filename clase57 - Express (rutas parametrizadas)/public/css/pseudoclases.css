@@ -1,0 +1,63 @@
+.pseudoclases a:link {
+  color: blue;
+}
+
+.pseudoclases a:visited {
+  color: red;
+}
+
+.pseudoclases .contenedor-1 {
+  
+}
+
+.pseudoclases .contenedor-1 h3{
+
+}
+.pseudoclases .contenedor-1 p{
+
+}
+.pseudoclases .contenedor-1 a{
+
+}
+
+.pseudoclases .contenedor-1 a:active {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+.pseudoclases .contenedor-2 {
+
+}
+.pseudoclases .contenedor-2 h3{
+
+}
+.pseudoclases .contenedor-2 p{
+
+}
+
+.pseudoclases .contenedor-2 a{
+  transition: 1s;
+}
+
+.pseudoclases .contenedor-2 a:hover {
+  font-size: 1.5rem;
+}
+
+.pseudoclases form .input-pseudoclases {
+  margin: 10px;
+  border:1px solid gray;
+  border-radius:1px;
+  font-size:0.5rem;
+  width: 200px;
+  padding: 10px;
+}
+
+.pseudoclases form .input-pseudoclases:focus {
+  color: red;
+  outline: 0.5px solid blue;
+}
+
+.pseudoclases form .input-pseudoclases::placeholder {
+  color: yellow;
+  background-color: blue;
+}
