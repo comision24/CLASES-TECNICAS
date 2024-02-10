@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("./partials/head", { title: "HOME",bootstrapActive: true }) %>
+
+<body>
+
+  <%- include("./partials/header") %>
+  
+  <main class="container my-5">
+    <div class="row gap-2">
+        <% for(let i = 0; i < products.length; i++) { %>
+
+          <%- include("./partials/cardPrincipal",{ product: products[i] } ) %>
+
+        <% } %>
+    </div>
+  </main>
+
+  <%- include("./partials/footer") %>
+
+  <%- include("./partials/scripts") %>
+
+</body>
+
+</html>

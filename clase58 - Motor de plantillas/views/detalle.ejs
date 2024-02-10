@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("./partials/head", { title: "HOME",bootstrapActive: true }) %>
+
+<body>
+
+  <%- include("./partials/header") %>
+  
+  <main class="container my-5">
+    
+    <img src="<%= product.img %>" alt="" style="width: 300px; height: 200px;object-fit: contain;">
+    <h2>NOMBRE PRODUCTO: <span><%= product.name %></span></h2>
+    <P>PRECIO: <span><%= product.price %></span></P>
+    <P>DESCUENTO: <span><%= product.discount %></span></P>
+
+  </main>
+
+  <%- include("./partials/footer") %>
+
+  <%- include("./partials/scripts") %>
+
+</body>
+
+</html>

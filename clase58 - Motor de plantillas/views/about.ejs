@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head", { title:"SOBRE NOSOTROS", bootstrapActive: true }) %>
+
+  <body>
+    <%- include("./partials/header") %>
+
+<main>
+
+  <h1>Esta es la vista <%= view %></h1>
+
+  <%- locals.subtitle %>
+
+  <% if (locals.subtitle) { %>
+    <h4>Esta vista tiene dos subtitulos</h4>
+  <% } %>
+
+  <form action="">
+    <select name="personaConCamara" id="personas">
+      <% for(let i = 0; i < personas.length; i++) { %>
+        <option value="<%= personas[i] %>"><%= personas[i] %></option>
+      <% } %>
+    </select>
+  </form>
+
+  <h3>NUMEROS PARES</h3>
+  <ul>
+    <% numeros.forEach(n => { %>
+      <% if (n % 2 === 0) { %>
+        <li><%= n %></li>
+      <% } %>
+    <% }) %>   
+  </ul>
+
+  <h3>NUMEROS IMPARES</h3>
+  <ul>
+    <% numeros.forEach(num => { %>
+      <% if (num % 2 === 1) { %>
+        <li><%= num %></li>
+      <% } %>
+    <% }) %>   
+  </ul>
+
+</main>
+
+<%- include("./partials/footer") %>
+
+
+<%- include("./partials/scripts") %>
+  </body>
+
+</html>
