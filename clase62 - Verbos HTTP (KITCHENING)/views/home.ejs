@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("./partials/head") %>
+
+  <body class="home-body">
+    <div class="contain-dots" id="contain-dots">
+      <div class="dot-spin"></div>
+    </div>
+
+    <%- include("./partials/header") %>
+
+    <main class="home">
+      <!-- BANNER -->
+      <!--  <section class="banner">
+    <img src="/images/img-banner.jpg" alt="">
+  </section> -->
+
+  <%- include("./partials/banner", { bannerImages }) %>
+
+      <div class="mt-4">
+
+        <div class="glider-contain">
+          <div class="glider">
+            <div>
+              <!-- PRODUCTO 1 -->
+              <div class="card mx-2">
+                <img src="/images/img-pdto-1.jpg" class="card-img-top" alt="img1"
+                  style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/1" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- PRODUCTO 2 -->
+              <div class="card mx-2">
+                <img src="/images/img-pdto-2.jpg" class="card-img-top" alt="img1"
+                  style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/2" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- PRODUCTO 3 -->
+              <div class="card mx-2">
+                <img src="/images/img-pdto-3.jpg" class="card-img-top" alt="img1"
+                  style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/3" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- PRODUCTO 4 -->
+              <div class="card mx-2">
+                <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/597787.jpg"
+                  class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 4</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/4" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- PRODUCTO 5 -->
+              <div class="card mx-2">
+                <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/9333506.jpg"
+                  class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 5</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/5" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- PRODUCTO 6 -->
+              <div class="card mx-2">
+                <img src="https://www.panificadoradelcentrosalto.com/uploads/2/6/6/8/26686326/8102850.jpg"
+                  class="card-img-top" alt="img1" style="height: 150px;object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card 6</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="/productos/detalle/6" class="btn btn-dark">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button aria-label="Previous" class="glider-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div role="tablist" class="dots"></div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+      <!-- PRODUCTOS -->
+      <section class="vip-products">
+        <!-- <h2>Productos Vip</h2> -->
+        <!-- PRODUCTO 1 -->
+        <article class="product" data-aos="fade-right" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-1.jpg" alt="foto">
+            <img class="sticker" src="/images/img-nuevo.png" alt="sticker">
+            <a class="zoom" href="#">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="/productos/detalle/10/bebidas">ver más</a>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="product" data-aos="fade-up" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-2.jpg" alt="foto">
+            <img class="sticker" src="/images/img-gratis.png" alt="sticker">
+            <a class="zoom" href="">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="/productos/detalle/11/cafes">ver más</a>
+        </article>
+
+        <!-- PRODUCTO 3 -->
+        <article class="product" data-aos="fade-left" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-3.jpg" alt="foto">
+            <img class="sticker" src="/images/img-descuento.png" alt="sticker">
+            <a class="zoom" href="">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="/productos/detalle/12">ver más</a>
+        </article>
+
+        <!-- PRODUCTO 4 -->
+        <article class="product" data-aos="fade-right" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-1.jpg" alt="foto">
+            <img class="sticker" src="/images/img-gratis.png" alt="sticker">
+            <a class="zoom" href="#">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="">ver más</a>
+        </article>
+
+        <!-- PRODUCTO 5 -->
+        <article class="product" data-aos="fade-up" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-2.jpg" alt="foto">
+            <img class="sticker" src="/images/img-nuevo.png" alt="sticker">
+            <a class="zoom" href="#">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="">ver más</a>
+        </article>
+
+        <!-- PRODUCTO 6 -->
+        <article class="product" data-aos="fade-right" data-aos-duration="1500">
+          <div class="photo-container">
+            <img class="photo" src="/images/img-pdto-3.jpg" alt="foto">
+            <img class="sticker" src="/images/img-descuento.png" alt="sticker">
+            <a class="zoom" href="#">AMPLIAR FOTO</a>
+          </div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad facilis, dicta delectus repellendus
+            distinctio libero.</p>
+          <a class="more" href="">ver más</a>
+        </article>
+
+      </section>
+    </main>
+
+    <%- include("./partials/footer") %>
+
+    <%- include("./partials/scripts") %>
+  </body>
+
+</html>

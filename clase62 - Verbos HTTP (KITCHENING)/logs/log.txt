@@ -1,0 +1,6 @@
+El usuario accedio al HOME a las 20:53:58 GMT-0300 (hora estándar de Argentina)
+El usuario accedio al REGISTRO a las 20:54:00 GMT-0300 (hora estándar de Argentina)
+El usuario accedio al CARRITO DE COMPRAS a las 20:54:01 GMT-0300 (hora estándar de Argentina)
+El usuario accedio al CARRITO DE COMPRAS a las 20:54:02 GMT-0300 (hora estándar de Argentina)
+El usuario accedio al REGISTRO a las 20:54:03 GMT-0300 (hora estándar de Argentina)
+El usuario accedio al HOME a las 20:54:05 GMT-0300 (hora estándar de Argentina)
