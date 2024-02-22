@@ -1,0 +1,9 @@
+.admin-list-products .img-product {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.table-list-products {
+  max-width: 1200px;
+}

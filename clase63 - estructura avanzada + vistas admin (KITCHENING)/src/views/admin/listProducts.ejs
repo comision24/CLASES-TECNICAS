@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="admin-list-products d-flex">
+
+        <div class="menu-dashboard">
+            <!-- TOP MENU -->
+            <div class="top-menu">
+                <div class="logo">
+                    <img src="../images/icon/logo.jpg" alt="">
+                    <span class="company-name-logo">KITCHENING</span>
+                </div>
+                <div class="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            <!-- INPUT SEARCH -->
+            <div class="input-search">
+                <i class='bx bx-search'></i>
+                <input type="text" class="input" placeholder="Buscar">
+            </div>
+            <!-- MENU -->
+            <div class="menu">
+                <div class="enlace">
+                    <i class="bx bx-grid-alt"></i>
+                    <span>Dashboard</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-user"></i>
+                    <span>Usuarios</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-grid-alt"></i>
+                    <span>Analíticas</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-message-square"></i>
+                    <span>Mensajes</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-file-blank"></i>
+                    <span>Archivos</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-cart"></i>
+                    <span>Pedidos</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-heart"></i>
+                    <span>Favoritos</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-cog"></i>
+                    <span>Configuración</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-admin-content p-5">
+            <h1 class="text-center text-danger my-4">Lista Productos</h1>
+
+            <a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
+            <table class="table table-list-products">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Chef</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="img-product" src="/images/products/Sushi-web.jpg" alt=""></td>
+                        <td>SUSHI PROFESIONAL</td>
+                        <td>10530</td>
+                        <td>Con una gran experiencia Roberto Nishida te enseña los secretos de las técnicas básicas en
+                            la elaboración del sushi, vas a descubrir la importancia de cada ingrediente para que
+                            realices una gran variedad de rolls, sashimis y niguiris.</td>
+                        <td>Roberto Nishida</td>
+
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="" class="btn btn-info d-inline-block">Info</a>
+                                <a href="/admin/editar-producto/1" class="btn btn-warning d-inline-block">Editar</a>
+                                <a href="" class="btn btn-danger d-inline-block">Eliminar</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><img class="img-product" src="/images/products/Sushi-web.jpg" alt=""></td>
+                        <td>SUSHI PROFESIONAL</td>
+                        <td>10530</td>
+                        <td>Con una gran experiencia Roberto Nishida te enseña los secretos de las técnicas básicas en
+                            la elaboración del sushi, vas a descubrir la importancia de cada ingrediente para que
+                            realices una gran variedad de rolls, sashimis y niguiris.</td>
+                        <td>Roberto Nishida</td>
+
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="" class="btn btn-info d-inline-block">Info</a>
+                                <a href="/admin/editar-producto/2" class="btn btn-warning d-inline-block">Editar</a>
+                                <a href="" class="btn btn-danger d-inline-block">Eliminar</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <script src="/js/functions/dashboard.js"></script>
+    </body>
+
+</html>

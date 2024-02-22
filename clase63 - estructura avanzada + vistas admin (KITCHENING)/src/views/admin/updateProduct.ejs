@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+  <body class="admin-list-products d-flex">
+
+    <div class="menu-dashboard">
+      <!-- TOP MENU -->
+      <div class="top-menu">
+        <div class="logo">
+          <img src="../images/icon/logo.jpg" alt="">
+          <span class="company-name-logo">KITCHENING</span>
+        </div>
+        <div class="toggle">
+          <i class='bx bx-menu'></i>
+        </div>
+      </div>
+      <!-- INPUT SEARCH -->
+      <div class="input-search">
+        <i class='bx bx-search'></i>
+        <input type="text" class="input" placeholder="Buscar">
+      </div>
+      <!-- MENU -->
+      <div class="menu">
+        <div class="enlace">
+          <i class="bx bx-grid-alt"></i>
+          <span>Dashboard</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-user"></i>
+          <span>Usuarios</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-grid-alt"></i>
+          <span>Analíticas</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-message-square"></i>
+          <span>Mensajes</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-file-blank"></i>
+          <span>Archivos</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-cart"></i>
+          <span>Pedidos</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-heart"></i>
+          <span>Favoritos</span>
+        </div>
+
+        <div class="enlace">
+          <i class="bx bx-cog"></i>
+          <span>Configuración</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-admin-content p-5 mx-auto">
+      <h1 class="text-center text-danger my-4">Editar Producto</h1>
+
+      <a href="/admin/productos" class="btn btn-primary mb-4">Volver al listado</a>
+
+      <div class="card container p-4" style="width:60rem;">
+        <form action="" class="row justify-content-between">
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label">Titulo</label>
+            <input type="text" name="title" class="form-control">
+          </div>
+
+          <div class="mb-3 col-6">
+            <label class="form-label">Precio</label>
+            <input type="number" name="price" class="form-control">
+          </div>
+
+          <div class="mb-3 form-floating col-6">
+            <textarea class="form-control" name="description" placeholder="Colocar la descripción del curso"></textarea>
+            <label>Descripción</label>
+          </div>
+
+          <div class="mb-3 form-floating col-6">
+            <select class="form-select" id="floatingSelect" aria-label="Desplegar las opciones" name="chef">
+              <option selected hidden>Seleccionar un chef</option>
+              <option value="1">Roberto Nishida</option>
+              <option value="2">Guillermo Calabrese</option>
+              <option value="3">Cubano Vega</option>
+            </select>
+            <label for="floatingSelect">Desplegar las opciones</label>
+          </div>
+
+
+          <div class="mb-3 row p-0 mx-auto">
+
+            <h3>Sección</h3>
+            <hr>
+            <div class="form-check col-4">
+              <input class="form-check-input" id="new" type="radio" name="section" checked>
+              <label class="form-check-label" for="sale">
+                Oferta
+              </label>
+            </div>
+
+            <div class="form-check col-4">
+              <input class="form-check-input" type="radio" id="new" checked name="section">
+              <label class="form-check-label" for="new">
+                Nuevo
+              </label>
+            </div>
+
+            <div class="form-check col-4">
+              <input class="form-check-input" type="radio" id="free" name="section">
+              <label class="form-check-label" for="free">
+                Gratis
+              </label>
+            </div>
+          </div>
+
+          <hr>
+          <div class="mb-3 form-check form-switch col-4">
+            <input class="form-check-input" type="checkbox" id="available" name="available" checked>
+            <label class="form-check-label" for="available">Disponible</label>
+          </div>
+
+          <div class="mb-3 col-8">
+            <label for="image" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="image" type="file" name="image">
+          </div>
+
+          <button type="submit" class="mb-3 btn btn-success col-4">Crear Producto</button>
+        </form>
+
+
+      </div>
+
+
+    </div>
+
+    <script src="/js/functions/dashboard.js"></script>
+  </body>
+
+</html>
