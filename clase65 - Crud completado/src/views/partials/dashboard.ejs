@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+  <body class="admin-list-products d-flex">
+
+    <div class="menu-dashboard">
+      <!-- TOP MENU -->
+      <div class="top-menu">
+          <div class="logo">
+              <img src="../images/icon/logo.jpg" alt="">
+              <span class="company-name-logo">KITCHENING</span>
+          </div>
+          <div class="toggle">
+              <i class='bx bx-menu-alt-left'></i>
+          </div>
+      </div>
+      <!-- INPUT SEARCH -->
+      <div class="input-search">
+          <i class='bx bx-search'></i>
+          <input type="text" class="input" placeholder="Buscar">
+      </div>
+      <!-- MENU -->
+      <div class="menu">
+          <div class="enlace">
+              <i class='bx bxs-food-menu'></i>
+              <span>Productos</span>
+          </div>
+
+          <div class="enlace">
+              <i class='bx bxs-food-menu'></i>
+              <span>Chefs</span>
+          </div>
+          
+          <div class="enlace">
+              <i class="bx bx-user"></i>
+              <span>Usuarios</span>
+          </div>
+          
+          <div class="enlace">
+              <i class="bx bx-cart"></i>
+              <span>Pedidos</span>
+          </div>
+
+          <div class="enlace">
+              <i class='bx bx-archive'></i>
+              <span>Ventas</span>
+          </div>
+          
+          <div class="enlace">
+              <i class="bx bx-heart"></i>
+              <span>Favoritos</span>
+          </div>
+
+          <div class="enlace">
+              <i class="bx bx-cog"></i>
+              <span>Configuración</span>
+          </div>
+      </div>
+  </div>
+
+    <div class="dashboard-admin-content p-5 mx-auto">
+        <%- contentView %>
+    </div>
+
+    <script src="/js/functions/dashboard.js"></script>
+  </body>
+
+</html>

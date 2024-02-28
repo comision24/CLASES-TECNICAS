@@ -1,0 +1,39 @@
+<h1 class="text-center text-danger my-4">Listado de productos</h1>
+
+<a href="/admin/crear-producto" class="btn btn-primary mb-4">Crear Producto</a>
+<table class="table table-list-products">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Chef</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% products.forEach(p => { %>
+        
+        <tr>
+            <th scope="row"><%= p.id %></th>
+            <td><img class="img-product" src="/images/products/<%= p.image %>" alt=""></td>
+            <td><%= p.title %></td>
+            <td><%= p.price %></td>
+            <td><%= p.description %></td>
+            <td><%= p.chef %></td>
+
+            <td>
+                <div class="btn-group" role="group">
+                    <a href="" class="btn btn-info d-inline-block">Info</a>
+                    <a href="/admin/editar-producto/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
+                    <a href="/admin/eliminar-producto?id=<%= p.id %>&title=<%= p.title %>" class="btn btn-danger d-inline-block">Eliminar</a>
+                </div>
+
+            </td>
+        </tr>
+
+        <% }) %>
+    </tbody>
+</table>

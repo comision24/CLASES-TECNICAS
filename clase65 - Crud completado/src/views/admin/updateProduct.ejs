@@ -1,0 +1,76 @@
+<h1 class="text-center text-danger my-4">Editar Producto</h1>
+
+<a href="/admin/productos" class="btn btn-primary mb-4">Volver al listado</a>
+
+<div class="card container p-4" style="width:60rem;">
+  <form action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="POST" class="row justify-content-between">
+
+    <div class="mb-3 col-6">
+      <label class="form-label">Titulo</label>
+      <input type="text" name="title" class="form-control" value="<%= product.title %>">
+    </div>
+
+    <div class="mb-3 col-6">
+      <label class="form-label">Precio</label>
+      <input type="number" name="price" value="<%= product.price %>" class="form-control">
+    </div>
+
+    <div class="mb-3 form-floating col-6">
+      <textarea class="form-control" name="description" placeholder="Colocar la descripción del curso"><%= product.description %></textarea>
+      <label>Descripción</label>
+    </div>
+
+    <div class="mb-3 form-floating col-6">
+      <select class="form-select" id="floatingSelect" aria-label="Desplegar las opciones" name="chef">
+        <option hidden>Seleccionar un chef</option>
+        <% chefs.forEach(c => { %>
+          <option <%= c.name === product.chef ? "selected" : null %> value="<%= c.name %>"><%= c.name %></option>
+        <% }) %>
+
+      </select>
+      <label for="floatingSelect">Desplegar las opciones</label>
+    </div>
+
+
+    <div class="mb-3 row p-0 mx-auto">
+
+      <h3>Sección</h3>
+      <hr>
+      <div class="form-check col-4">
+        <input <%= product.sale ? "checked" : null %> class="form-check-input" id="sale" type="radio" name="section" value="sale">
+        <label class="form-check-label" for="sale">
+          Oferta
+        </label>
+      </div>
+
+      <div class="form-check col-4">
+        <input <%= product.newest ? "checked" : null %> class="form-check-input" type="radio" id="newest"  name="section" value="newest">
+        <label class="form-check-label" for="newest">
+          Nuevo
+        </label>
+      </div>
+
+      <div class="form-check col-4">
+        <input <%= product.free ? "checked" : null %> class="form-check-input" type="radio" id="free" name="section" value="free">
+        <label class="form-check-label" for="free">
+          Gratis
+        </label>
+      </div>
+    </div>
+
+    <hr>
+    <div class="mb-3 form-check form-switch col-4">
+      <input class="form-check-input" type="checkbox" id="available" name="available"  <%= product.available ? "checked" : null %>>
+      <label class="form-check-label" for="available">Disponible</label>
+    </div>
+
+    <div class="mb-3 col-8">
+      <label for="image" class="form-label">Small file input example</label>
+      <input class="form-control form-control-sm" id="image" type="file" name="image">
+    </div>
+
+    <button type="submit" class="mb-3 btn btn-success col-4">Editar Producto</button>
+  </form>
+
+
+</div>

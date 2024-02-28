@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+<body class="home-body">
+
+  <div class="contain-dots" id="contain-dots">
+    <div class="dot-spin"></div>
+  </div>
+
+  <%- include("../partials/header") %>
+
+  <main class="register container my-5 row justify-content-center mx-auto">
+    <form action="/autenticacion/nuevo-usuario?_method=PUT" method="post" class="card p-4 col-12 col-md-6 col-lg-4" style="width: 300px;">
+      
+      <h2 class="cart-title text-end">Registro</h2>
+      <hr>
+      <!-- TIPO TEXT -->
+      <div class="d-flex flex-column mb-3 container-input">
+        <label class="" for="nombre">Nombre</label>
+        <input class="form-control form-control-sm" type="text" name="nombre" value="Jose" id="nombre">
+        <span class="required-input text-danger fs-4">*</span>
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input">
+        <label for="apellido">Apellido</label>
+        <input class="form-control form-control-sm" type="text" name="apellido" value="Diaz" id="apellido">
+        <span class="required-input text-danger fs-4">*</span>
+      </div>
+
+      <!-- TIPO EMAIL -->
+      <div class="d-flex flex-column mb-3 container-input">
+        <label for="email">Email</label>
+        <input class="form-control form-control-sm" type="email" name="email" value="jose@gmail.com" id="email">
+        <span class="required-input text-danger fs-4">*</span>
+      </div>
+
+      <!-- TIPO PASSWORD -->
+      <div class="d-flex flex-column mb-3">
+        <label for="contrasenia">Contraseña</label>
+        <input class="form-control form-control-sm" type="password" name="contrasenia" value="123123" id="contrasenia">
+      </div>
+
+      <div class="d-flex justify-content-center justify-content-lg-end gap-2 mt-4">
+        <button class="btn btn-sm btn-dark" type="submit">Registrarse</button>
+        <button class="btn btn-sm btn-custom-danger" type="reset">Cancelar</button>
+      </div>
+    </form>
+  </main>
+
+  <%- include("../partials/footer") %>
+
+  <%- include("../partials/scripts",{
+    disabledAos:true,
+    disabledGlider:true
+  }) %>
+</body>
+
+</html>

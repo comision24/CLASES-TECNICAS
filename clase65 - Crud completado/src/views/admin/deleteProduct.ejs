@@ -1,0 +1,14 @@
+
+<div class="card p-5">
+  <div class="card-title">
+    <strong class="me-auto">Eliminar producto</strong>
+  </div>
+  <div class="card-body">
+    Estas seguro de eliminar el producto: <%= title %>
+  </div>
+
+  <form action="/admin/eliminar-producto/<%= id %>?_method=DELETE" method="post">
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a href="/admin/productos" class="btn btn-dark">Cancelar</a>
+  </form>
+</div>
