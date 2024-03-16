@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Todos los productos' }) %>
+
+	<body>
+		<!-- Header -->
+		<%- include('../partials/headerNavbar') %>
+			<!-- /Header -->
+
+			<main class="container mt-5">
+				
+
+					<form class="row card shadow mx-auto p-3" style="width: 27rem;" method="post" 
+					action="/auth/iniciar">
+						<div class="img-logo mx-auto" style="width: 15rem;">
+							<img src="/images/default-avatar.jpg" class="rounded-circle" alt="avatar">
+						</div>
+						<h3 class="card-title text-center">Iniciar sesión</h3>
+						<div class="mb-3">
+							<label class="form-label">Email</label>
+							<input type="email" class="form-control" name="email">
+							<div class="form-text">Ingresar el email con el que te registraste</div>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Contraseña</label>
+							<input type="password" class="form-control" name="password">
+						</div>
+						<div class="mb-3 form-check mx-auto" style="width: fit-content;">
+							<input type="checkbox" class="form-check-input" id="remember" name="remember">
+							<label class="form-check-label" for="remember">Recordarme</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Iniciar</button>
+					</form>
+
+			</main>
+
+			<!-- footer -->
+			<%- include('../partials/footer') %>
+				<!-- /footer -->
+	</body>
+
+</html>

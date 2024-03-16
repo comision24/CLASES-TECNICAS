@@ -1,0 +1,20 @@
+[
+   {
+      "id": 1,
+      "name": "",
+      "surname": "",
+      "email": "admin@gmail.com",
+      "password": "$2a$12$CeiUSnGToRmQG4MCB5PqXeICRXYPorbFNV6YwOUekPSuNUuGNFN5q",
+      "role": "REGULAR",
+      "avatar": "default-avatar.jpg"
+   },
+   {
+      "id": 2,
+      "name": "",
+      "surname": "",
+      "email": "test@gmail.com",
+      "password": "$2a$12$pmZFwD9JRx6zVMk7.iNu3Okb9DOIIheqCviVJgUN1H69CbJH2lXi.",
+      "role": "REGULAR",
+      "avatar": "default-avatar.jpg"
+   }
+]

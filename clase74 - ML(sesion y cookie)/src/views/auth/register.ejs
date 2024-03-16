@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Todos los productos'}) %>
+<body>
+	<!-- Header -->
+	<%- include('../partials/headerNavbar') %>
+	<!-- /Header -->
+
+
+
+	<main class="container mt-5">
+				
+
+		<form class="row card shadow mx-auto p-3" style="width: 27rem;" method="post" 
+		action="/auth/registro">
+			<div class="img-logo mx-auto" style="width: 15rem;">
+				<img src="/images/default-avatar.jpg" class="rounded-circle" alt="avatar">
+			</div>
+			<h3 class="card-title text-center">Registro de usuario</h3>
+			<div class="mb-3">
+				<label class="form-label">Email</label>
+				<input type="text" class="form-control" name="email" value="<%= locals.old?.email %>" autocomplete="off">
+				<% if (!locals.errors) { %>
+					<div class="form-text">Ingresar el email para registrarte</div>
+				<% } else { %>
+					<div class="form-text fs-5 text-danger"><%= errors?.email?.msg %></div>
+				<% }  %>
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Contraseña</label>
+				<input type="password" class="form-control" name="password" value="<%= locals.old?.password %>">
+				<% if (locals.errors) { %>
+					<div class="form-text fs-5 text-danger"><%= errors?.password?.msg %></div>
+				<% } %>
+			</div>
+	
+			<button type="submit" class="btn btn-primary py-3">Registrar</button>
+			<a href="#" class="btn-google mt-2 shadow">
+				<img src="/images/google-logo.png" alt="Google Logo" class="google-logo">
+				Iniciar sesión con Google
+			</a>
+
+			<a href="#" class="btn-facebook mt-2 shadow">
+				<img src="/images/facebook-logo.png" alt="Facebook Logo" class="facebook-logo">
+				Iniciar sesión con Facebook
+			</a>
+		</form>
+
+</main>
+	
+
+
+	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
