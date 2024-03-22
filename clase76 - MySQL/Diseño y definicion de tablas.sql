@@ -1,0 +1,32 @@
+DROP SCHEMA IF EXISTS `KITCHENING`;
+CREATE SCHEMA `KITCHENING` DEFAULT CHARACTER SET utf8;
+
+USE KITCHENING;
+
+CREATE TABLE IF NOT EXISTS chefs (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    image VARCHAR(60) NULL
+);
+
+CREATE TABLE IF NOT EXISTS products (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    price DECIMAL(3,2) NOT NULL,
+    description TEXT NULL,
+    imagePrincipal VARCHAR(60) DEFAULT 'img-default.png',
+    sale TINYINT DEFAULT 0,
+    newest TINYINT DEFAULT 0,
+    free TINYINT DEFAULT 0,
+    available TINYINT DEFAULT 1,
+    id_chef INT,
+    FOREIGN KEY (id_chef) REFERENCES chefs (id)
+);
+
+CREATE TABLE IF NOT EXISTS images_products (
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    value VARCHAR(60) NOT NULL,
+    id_product INT,
+    FOREIGN KEY (`id_product`) REFERENCES products (`id`)
+);
+
