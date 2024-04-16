@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %>
+
+  <body>
+    <div class="contain-dots" id="contain-dots">
+      <div class="dot-spin"></div>
+    </div>
+    <%- include("../partials/header") %>
+
+      <main>
+        <%- include("../partials/banner", {height: "200px", bannerImages}) %>
+
+          <h3>ESTE ES EL CONTENIDO DE LA VISTA "SOBRE NOSOTROS"</h3>
+      </main>
+
+      <%- include("../partials/footer") %>
+
+        <%- include("../partials/scripts",{ disabledAos:true, disabledGlider:true }) %>
+  </body>
+
+</html>
