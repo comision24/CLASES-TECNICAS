@@ -1,0 +1,111 @@
+/* Header mobile */
+header.main-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header.main-header .logo {
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto 20px;
+}
+
+header.main-header .burger-menu {
+    color: var(--white);
+    background-color: var(--gray);
+    padding: 10px 7px;
+    font-size: 1.3rem;
+}
+
+header.main-header .main-nav {
+    height: 0;
+    opacity: 0;
+    transition: all 2s;
+}
+
+header.main-header .main-nav.active {
+    height: 220px;
+    opacity: 1;
+    
+}
+
+header.main-header .main-nav ul {}
+
+header.main-header .main-nav ul li {
+    background-color: var(--gray);
+    padding: 5px 0;
+    margin: 2px 0;
+}
+
+header.main-header .main-nav ul li a {
+    color: var(--white);
+}
+
+
+/* Header tablet */
+@media (min-width: 426px) {
+    header.main-header {}
+
+    header.main-header .logo {}
+
+    header.main-header .burger-menu {
+        display: none;
+    }
+
+    header.main-header .main-nav {
+        opacity: 1;
+        height: auto;
+    }
+
+    header.main-header .main-nav ul {}
+
+    header.main-header .main-nav ul li {
+        display: inline-block;
+        width: 123px;
+        padding: 10px;
+    }
+
+    header.main-header .main-nav ul li a {}
+}
+
+/* Header desktop */
+@media (min-width: 769px) {
+    header.main-header {}
+
+    header.main-header .logo {
+        width: 180px;
+        margin-bottom: 30px;
+    }
+
+    header.main-header .burger-menu {}
+
+    header.main-header .main-nav {}
+
+    header.main-header .main-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header.main-header .main-nav ul li:nth-child(6) {}
+
+    header.main-header .main-nav ul li {
+        width: 161px;
+        /* margin-right: 14px; */
+    }
+
+    header.main-header .main-nav ul li a {}
+
+}
+
+/* ------------  HAMBURGERS  ---------  */
+header.main-header .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    background-color: var(--white)
+}
+
+header.main-header .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: var(--white)
+}
+
+header.main-header .hamburger--spring .hamburger-inner {
+    top: 5px;
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id":1,
+    "name":"home"
+  },
+  {
+    "id":2,
+    "name":"about"
+  },
+  {
+    "id":3,
+    "name": "cart"
+  },
+  {
+    "id":4,
+    "name": "login"
+  },{
+    "id":5,
+    "name": "register"
+  },
+  {
+    "id":6,
+    "name": "detailProduct"
+  },
+  {
+    "id":7,
+    "name": "listProducts"
+  }
+]
