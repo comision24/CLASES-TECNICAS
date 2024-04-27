@@ -1,0 +1,113 @@
+<h1 class="text-center text-danger my-4">Crear Producto</h1>
+
+<a href="/admin/productos" class="btn btn-dark btn-dark-custom mb-4 d-inline-flex align-items-center"><span class="fs-4" style="filter:hue-rotate(160deg)">⬅️</span> Volver al listado</a>
+
+<div class="card container p-4" style="width:60rem;">
+  <form action="/admin/crear-producto" method="post" class="row justify-content-between" enctype="multipart/form-data">
+
+    <div class="mb-3 col-6">
+      <label class="form-label">Titulo</label>
+      <input type="text" name="title" class="form-control" value="<%= locals.old?.title %>">
+      <p class="text-danger">
+        <%= locals.errors?.title?.msg %>
+      </p>
+    </div>
+
+    <div class="mb-3 col-6">
+      <label class="form-label">Precio</label>
+      <input type="number" name="price" class="form-control" value="<%= locals.old?.price %>">
+      <p class="text-danger">
+        <%= locals.errors?.price?.msg %>
+      </p>
+    </div>
+
+    <div class="mb-3 form-floating col-6">
+      <textarea class="form-control" name="description"
+        placeholder="Colocar la descripción del curso"><%= locals.old?.description %></textarea>
+      <label>Descripción</label>
+      <p class="text-danger">
+        <%= locals.errors?.description?.msg %>
+      </p>
+
+    </div>
+
+    <div class="mb-3 form-floating col-6">
+      <select class="form-select" id="floatingSelect" aria-label="Desplegar las opciones" name="chef">
+        <option value="" selected hidden>Seleccionar un chef</option>
+
+        <% chefs.forEach(c=> { %>
+          <option <%=locals.old?.chef===c.name ? "selected" : null %> value="<%= c.id %>"><%= c.name %>
+          </option>
+          <% }) %>
+
+      </select>
+      <label for="floatingSelect">Desplegar las opciones</label>
+      <p class="text-danger">
+        <%= locals.errors?.chef?.msg %>
+      </p>
+
+    </div>
+
+
+    <div class="mb-3 row p-0 mx-auto">
+
+      <h3>Sección</h3>
+      <hr>
+      <div class="form-check col-4">
+        <input class="form-check-input" <%=locals.old?.section==="sale" ? "checked" : null %> id="new" value="sale"
+        type="radio" name="section" >
+        <label class="form-check-label" for="sale">
+          Oferta
+        </label>
+      </div>
+
+      <div class="form-check col-4">
+        <input class="form-check-input" <%=locals.old?.section==="newest" ? "checked" : null %> type="radio" id="newest"
+        value="newest" name="section" checked>
+        <label class="form-check-label" for="newest">
+          Nuevo
+        </label>
+      </div>
+
+      <div class="form-check col-4">
+        <input class="form-check-input" <%=locals.old?.section==="free" ? "checked" : null %> type="radio" value="free"
+        id="free" name="section">
+        <label class="form-check-label" for="free">
+          Gratis
+        </label>
+      </div>
+      <p class="text-danger col-12 text-center">
+        <%= locals.errors?.section?.msg %>
+      </p>
+
+    </div>
+
+    <hr>
+    <div class="mb-3 form-check form-switch col-4">
+      <input class="form-check-input" type="checkbox" id="available" name="available" checked>
+      <label class="form-check-label" for="available">Disponible</label>
+    </div>
+
+    <div class="mb-3 col-6">
+      <label for="image" class="form-label text-info">Seleccionar la imagen principal</label>
+      <input class="form-control form-control-sm" id="image" type="file" name="imagePrincipal" accept="image/*">
+      <p class="text-danger col-12">
+        <%= locals.errors?.imagePrincipal?.msg %>
+      </p>
+    </div>
+
+    <div class="mb-3 col-6"></div>
+    <div class="mb-3 col-6">
+      <label for="image" class="form-label text-info">Seleccionar las imagenes secundarias</label>
+      <input class="form-control form-control-sm" id="image" type="file" name="imagesSecondary" multiple
+        accept="image/*">
+        <p class="text-danger col-12">
+          <%= locals.errors?.imagesSecondary?.msg %>
+        </p>
+    </div>
+
+    <button type="submit" class="mb-3 btn btn-dark btn-dark-custom col-4">Crear Producto</button>
+  </form>
+
+
+</div>

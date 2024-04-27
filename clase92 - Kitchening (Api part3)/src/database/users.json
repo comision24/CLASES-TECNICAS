@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Emanuel",
+    "surname": "Arroyo",
+    "email": "ema@gmail.com",
+    "password": "$2a$10$/WAk9g1yqCehbvEh/8XXf.kmlYp8ws.NI9uQPmhrwKZCRE.5ZqP9.",
+    "avatar": "",
+    "role": "ADMIN",
+    "addresses": [
+      {
+        "street": "Letonia",
+        "city": "San Miguel",
+        "province": "Buenos Aires",
+        "cp": "1663",
+        "num": "123",
+        "country": "Argentina",
+        "default": true
+      },
+      {
+        "street": "Garcia Lorca",
+        "city": "Jose C Paz",
+        "province": "Buenos Aires",
+        "cp": "1665",
+        "num": "456",
+        "country": "Argentina",
+        "default": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gaston",
+    "surname": "Castillo",
+    "email": "gaston@gmail.com",
+    "password": "$2a$10$/WAk9g1yqCehbvEh/8XXf.kmlYp8ws.NI9uQPmhrwKZCRE.5ZqP9.",
+    "avatar": "",
+    "role": "REGULAR",
+    "addresses": [{
+      "street": "Dorrego",
+      "city": "San Miguel",
+      "province": "Buenos Aires",
+      "cp": "1663",
+      "num": "567",
+      "country": "Argentina",
+      "default": true
+    }]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "state": "pending",
+    "total": 40500,
+    "user": "gaston@gmail.com",
+    "products": [
+      {
+        "name": "PANADERÍA CASERA",
+        "quantity": 2
+      },
+      {
+        "name": "ALIMENTACIÓN SALUDABLE 1",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "state": "completed",
+    "total": 21060,
+    "user": "ema@gmail.com",
+    "products": [
+      {
+        "name": "COCINA NATURAL",
+        "quantity": 1
+      },
+      {
+        "name": "COCINERO AFICIONADO 1",
+        "quantity": 1
+      }
+    ]
+  }
+]

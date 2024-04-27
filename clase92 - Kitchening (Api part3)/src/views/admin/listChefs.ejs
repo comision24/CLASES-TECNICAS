@@ -1,0 +1,31 @@
+<h1 class="text-center text-danger my-4">Listado de chefs</h1>
+
+<a href="#" class="btn btn-dark btn-dark-custom mb-4">Crear Chef</a>
+<table class="table table-list-products">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% chefs.forEach(c => { %>
+        
+        <tr>
+            <th scope="row"><%= c.id %></th>
+            <td><img class="img-product" src="/images/chefs/<%= c.image %>" alt=""></td>
+            
+            <td><%= c.name %></td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a href="#" class="btn btn-warning d-inline-block">Editar</a>
+                    <a href="#" class="btn btn-danger btn-danger-custom d-inline-block">Eliminar</a>
+                </div>
+            </td>
+        </tr>
+
+        <% }) %>
+    </tbody>
+</table>
