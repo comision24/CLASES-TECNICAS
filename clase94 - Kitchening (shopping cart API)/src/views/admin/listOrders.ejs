@@ -1,0 +1,53 @@
+<h1 class="text-center text-danger my-4">Listado de ordenes</h1>
+
+<a href="#" class="btn btn-dark btn-dark-custom mb-4">Crear Orden</a>
+<table class="table table-list-products">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Total</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <% orders.forEach(o => { %>
+
+            <tr>
+                <th scope="row">
+                    <%= o.id %>
+                </th>
+                <td>
+                    <%= o.state == "pending" ? "PENDIENTE" : o.state == "completed" ? "COMPLETO" : "CANCELADO" %>
+                </td>
+                <td>
+                    <%= o.total %>
+                </td>
+                <td>
+                    <%= o.user.name + " " + o.user.surname %>
+                </td>
+                <td>
+                    <ol type="i">
+                        <% o.products.forEach(p=> { %>
+                            <li>
+                                - <%= p.title %>
+                            </li>
+                            <% }) %>
+                    </ol>
+                </td>
+
+                <td>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-warning d-inline-block">Editar</a>
+                        <a href="#" class="btn btn-danger btn-danger-custom d-inline-block">Eliminar</a>
+                    </div>
+                </td>
+
+            </tr>
+
+            <% }) %>
+    </tbody>
+</table>

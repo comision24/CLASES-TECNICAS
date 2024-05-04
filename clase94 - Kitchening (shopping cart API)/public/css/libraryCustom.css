@@ -1,0 +1,45 @@
+.btn-danger-custom {
+  background-color: var(--red);
+}
+
+.btn-danger-custom:hover {
+  background-color: rgb(184, 2, 2);
+}
+
+/* -------------------------------- */
+
+.btn-dark-custom {
+  background-color: var(--gray);
+}
+
+.btn-dark-custom:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+/* -------------------------------- */
+
+.text-danger-custom {
+  color:var(--red);
+}
+
+
+/* -------------------------------- */
+.form-check-input-danger-custom:checked {
+  background-color: var(--red) !important;
+  border-color: rgba(233, 120, 144, 0.252) !important;
+}
+
+.form-check-input-danger-custom:focus {
+  box-shadow: 0 0 0 0.30rem rgba(233, 120, 144, 0.252);
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.30rem rgba(233, 120, 144, 0.252);
+  border-color: rgba(233, 120, 144, 0.252) !important;
+}
+
+.option-form-select:hover {
+  background-color: rgba(233, 120, 144, 0.252) !important;
+  color: white;
+}
+

@@ -1,0 +1,46 @@
+<h1 class="text-center text-danger my-4">Listado de productos</h1>
+
+<a href="/admin/crear-producto" class="btn btn-dark btn-dark-custom mb-4">Crear Producto</a>
+<table class="table table-list-products">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Imagenes sec.</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Chef</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% products.forEach(p => { %>
+        
+        <tr>
+            <th scope="row"><%= p.id %></th>
+            <td><img class="img-product" src="/images/products/<%= p.imagePrincipal %>" alt=""></td>
+            <td>
+                <% p.imagesSecondary.forEach(img => { %>
+                     <img class="img-product" src="/images/products/<%= img.file %>" alt="" 
+                    style="width: 50px;height: 50px;object-fit: cover;"> 
+                <% }) %>
+            </td> 
+            <td><%= p.title %></td>
+            <td><%= p.price %></td>
+            <td><%= p.description %></td>
+            <td><%= p.chef.name %></td>
+
+            <td>
+                <div class="btn-group" role="group">
+                    <a href="" class="btn btn-dark btn-dark-custom d-inline-block">Info</a>
+                    <a href="/admin/editar-producto/<%= p.id %>" class="btn btn-warning d-inline-block">Editar</a>
+                    <a href="/admin/eliminar-producto?id=<%= p.id %>&title=<%= p.title %>" class="btn btn-danger btn-danger-custom d-inline-block">Eliminar</a>
+                </div>
+
+            </td>
+        </tr>
+
+        <% }) %>
+    </tbody>
+</table>
