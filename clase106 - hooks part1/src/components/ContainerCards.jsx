@@ -1,27 +1,25 @@
-import React, { Component } from 'react'
-import Card from './Card'
+import React from "react";
+import PropTypes from 'prop-types'
+import Card from "./Card";
 
-export class ContainerCards extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="container my-4">
-        <div className="row gap-2">
-          {
-            this.props.items.map((item,i) => {
-              return <Card key={i} {...item}/>
-            })
-          }
-            
-            
-        </div>
+export const ContainerCards = ({ items }) => {
+  return (
+    <div className="container my-4">
+      <div className="row gap-2">
+        {items.map((item, i) => {
+          return <Card key={i} {...item} />;
+        })}
       </div>
-    )
-  }
+    </div>
+  );
+};
+
+Card.propTypes = {
+  items: PropTypes.array,
 }
 
-export default ContainerCards
+Card.defaultProps = {
+  items: []
+}
+
+export default ContainerCards;

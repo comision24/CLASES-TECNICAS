@@ -1,32 +1,42 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import PropTypes from 'prop-types'
 
-export class Card extends Component {
+export const Card = ({title, gif}) => {
 
-  constructor(props) {
-    super(props)
-  }
+  useEffect(() => {
 
-  componentWillUnmount(){ // cuando se desmonte la tarjeta del gif
-    console.log("Se desmonto la tarjeta");
-  }
+    return () => {
+      console.log("Se desmonto la tarjeta");
+    }
 
-  render() {
-    return (
-      <div className="card col-4" style={{width: "18rem"}}>
-        <img src={this.props.gif} className="card-img-top" alt="..." style={{height:"150px",objectFit:"contain"}} />
-        <div className="card-body">
-          <h5 className="card-title">{this.props.title}</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+  }, [])
+
+  return (
+    <div className="card col-4" style={{width: "18rem"}}>
+      <img src={gif} className="card-img-top" alt="..." style={{height:"150px",objectFit:"contain"}} />
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" className="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
-    );
-  }
+    </div>
+  );
+
+}
+
+Card.propTypes = {
+  gif: PropTypes.string,
+  title: PropTypes.string,
+}
+
+Card.defaultProps = {
+  gif: "",
+  title: "",
 }
 
 export default Card;
