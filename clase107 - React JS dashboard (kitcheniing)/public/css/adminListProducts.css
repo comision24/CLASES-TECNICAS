@@ -1,0 +1,32 @@
+.admin-list-products .img-product {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.table-list-products {
+  max-width: 1200px;
+  height: 60vh;
+  overflow-y: scroll;
+  display: block;
+}
+
+
+/* .table-list-products::-webkit-scrollbar {display: none;} */
+
+.table-list-products::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.table-list-products::-webkit-scrollbar-track {
+  background: transparent;
+}
+.table-list-products:hover::-webkit-scrollbar-thumb {
+  background: var(--red);
+}
+.table-list-products:hover::-webkit-scrollbar-track {
+  background: var(--red);
+}
+
+/*  .table-list-products:hover {
+  --fix: ; 
+}  */

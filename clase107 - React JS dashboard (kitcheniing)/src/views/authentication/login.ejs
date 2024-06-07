@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+<body class="home-body">
+
+  <div class="contain-dots" id="contain-dots">
+    <div class="dot-spin"></div>
+  </div>
+
+  <%- include("../partials/header") %>
+
+  <main class="register container my-5 row justify-content-center mx-auto">
+    <form action="/autenticacion/iniciar" method="post" class="card p-4 col-12 col-md-6 col-lg-4" style="width: 300px;">
+      
+      <h2 class="cart-title text-end">Iniciar Sesión</h2>
+      <hr>
+      
+      <!-- EMAIL -->
+      <div class="d-flex flex-column mb-3 container-input">
+        <label for="email">Email</label>
+        <input autocomplete="current-password" class="form-control form-control-sm" type="email" name="email" value="" id="email">
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="d-flex flex-column mb-3">
+        <label for="contrasenia">Contraseña</label>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control form-control-sm input-password" name="password" value="" id="contrasenia">
+          <span class="input-group-text bg-transparent" id="btn-eye">
+            <i class="fa-solid fa-eye" id="icon-eye"></i>
+            <!-- <i class="fa-solid fa-eye-slash"></i> -->
+          </span>
+        </div>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" name="remember" type="checkbox" id="flexCheckChecked">
+        <label class="form-check-label lbl-remember" for="flexCheckChecked">
+          Recordarme
+        </label>
+      </div>
+
+     
+
+      <div class="d-flex justify-content-center justify-content-lg-end gap-2 mt-4">
+        <button class="btn btn-sm btn-dark" type="submit">Iniciar</button>
+        <button class="btn btn-sm btn-custom-danger" type="reset">Cancelar</button>
+      </div>
+    </form>
+  </main>
+
+  <%- include("../partials/footer") %>
+
+  <%- include("../partials/scripts",{
+    disabledAos:true,
+    disabledGlider:true
+  }) %>
+
+  <script src="/js/functions/togglePassword.js"></script>
+</body>
+
+</html>

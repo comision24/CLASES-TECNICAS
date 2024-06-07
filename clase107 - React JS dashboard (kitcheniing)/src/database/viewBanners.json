@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "view": "home",
+    "banners": [
+      {
+        "file": "img-banner.jpg",
+        "title": "TITULO HOME",
+        "subtitle": null,
+        "paragraph": null
+      },
+      {
+        "file": "img-banner2.jpg",
+        "title": "TITULO HOME",
+        "subtitle": null,
+        "paragraph": null
+      },
+      {
+        "file": "img-banner3.jpg",
+        "title": "TITULO HOME",
+        "subtitle": null,
+        "paragraph": null
+      }
+    ]
+  }
+]

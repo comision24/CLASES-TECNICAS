@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+<body class="home-body">
+
+  <div class="contain-dots" id="contain-dots">
+    <div class="dot-spin"></div>
+  </div>
+
+  <%- include("../partials/header") %>
+
+  <main class="container my-5 row justify-content-center mx-auto">
+    <form action="/usuario/perfil?_method=PUT" method="post" class="row p-4 col-12 col-md-6 col-lg-4 justify-content-center" style="width: 700px;" enctype="multipart/form-data">
+      
+      <h2 class="cart-title col-12">Perfil de usuario</h2>
+      <hr>
+
+      <div class="d-flex flex-column mb-3 container-input col-12">
+        <div class="my-3 mx-auto" style="width: 200px; height: 200px;object-fit: contain;clip-path: circle();">
+          <img src="/images/users/<%= user.avatar %>" alt="avatar" class="img-fluid">
+          <!-- <img class="img-fluid" src="/images/users/default-img.jpg" alt="avatar"> -->
+        </div>
+        <label class="" for="nombre">Avatar</label>
+        <input class="form-control form-control-sm" type="file" accept="image/*" name="avatar" id="nombre">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="" for="nombre">Nombre</label>
+        <input class="form-control form-control-sm" type="text" name="name" id="nombre" value="<%= user.name %>">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label for="apellido">Apellido</label>
+        <input class="form-control form-control-sm" type="text" name="surname" id="apellido" value="<%= user.surname %>">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label for="email">Email</label>
+        <input disabled class="form-control form-control-sm" type="email" value="<%= user.email %>" id="email">
+      </div>
+
+      <h2 class="cart-title col-12 mt-5">Dirección</h2>
+      <hr>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="country">País</label>
+        <input class="form-control form-control-sm" type="text" name="country" id="country" value="<%= user.addresses[0]?.country %>">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="province">Provincia</label>
+        <select class="form-select form-control-sm" name="province" id="province">
+
+          <option value="" selected hidden>Seleccionar provincia</option>
+
+          <%# provinces.forEach(p => { %>
+            <!-- <option value="<%#= p.id %>"><%#= p.nombre %></option> -->
+          <%# }) %>
+
+        </select>
+      </div>
+
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="city">Localidad</label>
+        <select class="form-select form-control-sm" name="city" id="city">
+
+          <option value="" selected hidden>Seleccionar localidad</option>
+
+          <%# cities.forEach(c => { %>
+            <!-- <option value="<%#= c.id %>"><%#= c.nombre %></option> -->
+          <%# }) %>
+
+        </select>
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="zipCode">Código Postal</label>
+        <input class="form-control form-control-sm" type="text" name="zipCode" id="zipCode" value="<%= user.addresses[0]?.zipCode %>">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="street">Calle</label>
+        <input class="form-control form-control-sm" type="text" name="street" id="street" value="<%= user.addresses[0]?.street %>">
+      </div>
+
+      <div class="d-flex flex-column mb-3 container-input col-6">
+        <label class="form-label" for="streetNo">Número</label>
+        <input class="form-control form-control-sm" type="number" name="streetNo" id="streetNo" value="<%= user.addresses[0]?.streetNo %>">
+      </div>
+ 
+
+      <div class="d-flex justify-content-center justify-content-lg-end gap-2 mt-4">
+        <button class="btn btn-sm btn-dark btn-dark-custom" type="reset">Salir</button>
+        <a href="/usuario/direcciones" class="btn btn-sm btn-primary">Mis Direcciones</a>
+        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Borrar mi usuario
+        </button>
+        <button class="btn btn-sm btn-success" type="submit">Actualizar</button>
+      </div>
+    </form>
+
+
+    <!-- MODAL -->
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¿Estas seguro de eliminar tu cuenta?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- <div class="modal-body">
+        
+      </div> -->
+      <form action="/usuario/eliminar?_method=DELETE" method="post" class="modal-footer">
+        <button type="button" class="btn btn-dark btn-dark-custom" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-danger btn-danger-custom">Confirmar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <%- include("../partials/footer") %>
+
+  <%- include("../partials/scripts",{
+    disabledAos:true,
+    disabledGlider:true
+  }) %>
+
+  <script src="/js/functions/profile.js"></script>
+</body>
+
+</html>
