@@ -4,8 +4,8 @@ const {
   storeApi,
   updateApi,
   removeApi,
-  renderImg
-} = require("../../controllers/api/admin");
+  renderImg,
+} = require("../../controllers/api/products");
 const { uploadProducts } = require("../../middlewares/uploads");
 
 /* /api/products */
@@ -30,6 +30,6 @@ router.put(
 
 router.delete("/:id", removeApi);
 
-router.get("/:image", renderImg)
+router.get("/:image", renderImg);
 
 module.exports = router;

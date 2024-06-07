@@ -1,3 +1,3 @@
-module.exports = {  // API
-
+module.exports = {
+  list: require("./list.controller.api"),
 };

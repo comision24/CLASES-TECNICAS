@@ -1,12 +1,19 @@
 const db = require("../../../db/models");
 const { literal } = require("sequelize");
 const getOriginUrl = require("../../utils/getOriginUrl");
+const { ErrorCustom } = require("../../utils/createError");
 
-module.exports = (req, res) => {
-  const {page} = req.query
-  db.Product.paginate({
+module.exports = async (req, res) => {
+  try {
+
+  const {page = "1", limit = "5"} = req.query
+
+  if (isNaN(+page) || isNaN(+limit))
+    throw new ErrorCustom(400, "El formato de página o límite no es válido");
+
+  const { docs: products, pages, total } = await db.Product.paginate({
     page: +page,
-    paginate: 10,
+    paginate: +limit,
     include: [
       {
         association: "imagesSecondary",
@@ -14,7 +21,7 @@ module.exports = (req, res) => {
           include: [
             [
               literal(`CONCAT('${getOriginUrl(req)}/api/products/', file)`),
-              "imageSecondaryAPI",
+              "imageSecondary_url",
             ]
           ],
         },
@@ -30,7 +37,7 @@ module.exports = (req, res) => {
           literal(
             `CONCAT('${getOriginUrl(req)}/api/products/', imagePrincipal)`
           ),
-          "imagePrincipalAPI",
+          "imagePrincipal_url",
         ],
         [
           literal(`CONCAT('${getOriginUrl(req)}/productos/detalle/', Product.id)`),
@@ -39,13 +46,12 @@ module.exports = (req, res) => {
       ],
     },
   })
-    .then(({ docs: products, pages, total }) => {
+   
 
       const nextPage = pages === +page || page > pages ? null : +page + 1;
-      console.log(nextPage)
-      const previosPage = +page > 1 && page < pages ? +page - 1 : null
+      const previosPage = page > 1 || +page === pages ? +page - 1 : null
 
-      res.status(200).json({
+      return res.status(200).json({
         ok: true,
         pages,
         total,
@@ -53,11 +59,12 @@ module.exports = (req, res) => {
         prev: previosPage ? getOriginUrl(req) + "/api/products?page=" + previosPage : null,
         data: products,
       });
-    })
-    .catch((err) => {
-      res.status(500).json({
+   
+    } catch(err) {
+      res.status(err.status || 500).json({
         ok: false,
         msg: err.message,
-      });
-    });
+      })
+    }
+    
 };

@@ -1,6 +1,7 @@
 "use strict";
 const bcrypt = require("bcryptjs");
 const { Model } = require("sequelize");
+const sequelizePaginate = require("sequelize-paginate")
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -46,5 +47,7 @@ module.exports = (sequelize, DataTypes) => {
       // deletedAt: "dateDelete"
     }
   );
+
+  sequelizePaginate.paginate(User)
   return User;
 };

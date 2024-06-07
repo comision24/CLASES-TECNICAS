@@ -25,6 +25,7 @@ const apiProductRoutes = require("./routes/api/products.api")
 const apiAuthRoutes = require("./routes/api/authentication.api")
 const apiCartRoutes = require("./routes/api/cart.api")
 const apiAdminRoutes = require("./routes/api/admin.api")
+const apiUserRoutes = require("./routes/api/users.api")
 
 var app = express();
 
@@ -46,7 +47,7 @@ app.use(
 
 app.use(checkCookie);
 app.use(checkSession);
-
+ 
 /* ENRUTADORES */
 
 // Los que se visualizan en el navegador van en español
@@ -64,6 +65,7 @@ app.use("/api/authentication", apiAuthRoutes);
 app.use("/api/cart", apiCartRoutes);
 app.use("/api/products", apiProductRoutes);
 app.use("/api/admin", apiAdminRoutes);
+app.use("/api/users", apiUserRoutes);
 
 app.use((req, res, next) => {
   res.status(404).render("other/notFound");
